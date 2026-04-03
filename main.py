@@ -8,12 +8,12 @@ app = FastAPI()
 def greet():
     return("Welcome to the track..!")
 
-products = [
-    Product(1, "phone", "budget phone", 99, 10),
-    Product(1, "laptop", "nvidia laptop", 199, 1)
-]
 
+products = [
+    Product(1, "mobile", "budget mobile", 23.5, 3),
+    Product(2, "laptop", "nvidia laptop", 40, 5),    
+]
 
 @app.get("/products")
 def get_all_products():
-    return(products)
+    return 
